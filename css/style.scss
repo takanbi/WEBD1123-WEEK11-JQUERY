@@ -18,17 +18,65 @@ div.container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    h1 {
-        background-color: white;
-        width: 60%;
-        padding: 0.5em 48px;
+    h1#title1 {
+      background-color: white;
+      width: 60%;
+      padding: 0.5em 48px;
     }
     p {
       width: 60%;
       color: white;
       background-color: black;
       padding: 3em;
-      button#myBtn {
+
+      a.myBTn {
+        display: inline-block;
+        padding: 1em 2em;
+        margin-top: 1em;
+        border: none;
+        background-color: red;
+        border-radius: 1em;
+        text-transform: uppercase;
+        color: white;
+        border: 2px solid white;
+        cursor: pointer;
+        transition: all 200ms;
+        text-decoration: none;
+      }
+      a.myBTn:hover {
+        background-color: rgb(100, 0, 0);
+        border: 2px solid gray;
+      }
+    }
+  }
+ #section2 {
+   form {
+    #form-table {
+      background-color: black;
+      width: 960px;
+      padding: 2em;
+    }
+    tr {
+      padding: 1em 0;
+      td.form-label {
+        width: 50%;
+        .form-label-title {
+          color: white;
+        }
+        .form-input {
+          width: 100%;
+          font-size: 1.5em;
+          padding: 0.075em 0;
+          margin: 8px 0;
+          border-radius: 0.25em;
+          border: none;
+          background-color: rgba(199,199,199,0.7);
+          transition: background-color 500ms;
+        }
+        .form-input:focus {
+          background-color: white;
+        }
+        button.myBtn {
           display: block;
           padding: 1em 2em;
           margin-top: 1em;
@@ -40,31 +88,15 @@ div.container {
           border: 2px solid white;
           cursor: pointer;
           transition: all 200ms;
-      }
-      button#myBtn:hover {
-        background-color: rgb(100, 0, 0);
-        border: 2px solid gray;
+        }
+        button.myBtn:hover {
+          background-color: rgb(100, 0, 0);
+          border: 2px solid gray;
+        }
       }
     }
-  }
-  section#section2 {
-      background-color: black;
-      form {
-          width: 80%;
-          height: 80%;
-          background-color: white;
-          table {
-              width: 80%;
-              margin: 0 auto;
-              .form-label {
-                  width: 50%;
-                  padding: 1em 0;
-                  input {
-                      width: 90%;
-                      height: 50px;
-                  }
-              }
-          }
-      }
-  }
+   }
+ }
 }
+
+

@@ -31,7 +31,7 @@ div.container section {
           flex-direction: column;
 }
 
-div.container section h1 {
+div.container section h1#title1 {
   background-color: white;
   width: 60%;
   padding: 0.5em 48px;
@@ -44,7 +44,62 @@ div.container section p {
   padding: 3em;
 }
 
-div.container section p button#myBtn {
+div.container section p a.myBTn {
+  display: inline-block;
+  padding: 1em 2em;
+  margin-top: 1em;
+  border: none;
+  background-color: red;
+  border-radius: 1em;
+  text-transform: uppercase;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  text-decoration: none;
+}
+
+div.container section p a.myBTn:hover {
+  background-color: #640000;
+  border: 2px solid gray;
+}
+
+div.container #section2 form #form-table {
+  background-color: black;
+  width: 960px;
+  padding: 2em;
+}
+
+div.container #section2 form tr {
+  padding: 1em 0;
+}
+
+div.container #section2 form tr td.form-label {
+  width: 50%;
+}
+
+div.container #section2 form tr td.form-label .form-label-title {
+  color: white;
+}
+
+div.container #section2 form tr td.form-label .form-input {
+  width: 100%;
+  font-size: 1.5em;
+  padding: 0.075em 0;
+  margin: 8px 0;
+  border-radius: 0.25em;
+  border: none;
+  background-color: rgba(199, 199, 199, 0.7);
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
+}
+
+div.container #section2 form tr td.form-label .form-input:focus {
+  background-color: white;
+}
+
+div.container #section2 form tr td.form-label button.myBtn {
   display: block;
   padding: 1em 2em;
   margin-top: 1em;
@@ -59,33 +114,8 @@ div.container section p button#myBtn {
   transition: all 200ms;
 }
 
-div.container section p button#myBtn:hover {
+div.container #section2 form tr td.form-label button.myBtn:hover {
   background-color: #640000;
   border: 2px solid gray;
-}
-
-div.container section#section2 {
-  background-color: black;
-}
-
-div.container section#section2 form {
-  width: 80%;
-  height: 80%;
-  background-color: white;
-}
-
-div.container section#section2 form table {
-  width: 80%;
-  margin: 0 auto;
-}
-
-div.container section#section2 form table .form-label {
-  width: 50%;
-  padding: 1em 0;
-}
-
-div.container section#section2 form table .form-label input {
-  width: 90%;
-  height: 50px;
 }
 /*# sourceMappingURL=style.css.map */
