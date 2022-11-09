@@ -1,10 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@100&display=swap");
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Roboto', sans-serif;
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
-
+div.container {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  section {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+        background-color: white;
+        width: 60%;
+        padding: 0.5em 48px;
+    }
+    p {
+      width: 60%;
+      color: white;
+      background-color: black;
+      padding: 3em;
+      button#myBtn {
+          display: block;
+          padding: 1em 2em;
+          margin-top: 1em;
+          border: none;
+          background-color: red;
+          border-radius: 1em;
+          text-transform: uppercase;
+          color: white;
+          border: 2px solid white;
+          cursor: pointer;
+          transition: all 200ms;
+      }
+      button#myBtn:hover {
+        background-color: rgb(100, 0, 0);
+        border: 2px solid gray;
+      }
+    }
+  }
+  section#section2 {
+      background-color: black;
+      form {
+          width: 80%;
+          height: 80%;
+          background-color: white;
+          table {
+              width: 80%;
+              margin: 0 auto;
+              .form-label {
+                  width: 50%;
+                  padding: 1em 0;
+                  input {
+                      width: 90%;
+                      height: 50px;
+                  }
+              }
+          }
+      }
+  }
+}
